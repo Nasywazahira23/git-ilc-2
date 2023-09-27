@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+        }
+        .logo{
+            position: absolute;
+            left: 15%;
+            top: 35%;
+        }
+        .title{
+            position: absolute;
+            left: 65%;
+            top: 5%;
+        }
+        p{
+            position: absolute;
+            left: 3%;
+            top: 1%;
+            font-family: "times new roman";
+            line-height: 30px;
+            font-size: 40px; 
+            color: orange;
+        }
+        p2{
+            position: absolute;
+            left: 3%;
+            top: 17%;
+            font-family: "corbel";
+            line-height: 30px;
+            font-size: 70px; 
+            color: orange;
+        }
+        p3{
+            position: absolute;
+            left: 3%;
+            top: 26%;
+            font-family: "times new roman";
+            line-height: 30px;
+            font-size: 20px; 
+            color: black;
+        }
+        p4{
+            position: absolute;
+            left: 3%;
+            top: 95%;
+            font-family: "times new roman";
+            line-height: 30px;
+            font-size: 13px; 
+            color: black;
+        }
+        label{
+            text-align: justify;
+            font-style: "verdana";
+            font-size: 18px; 
+        }
+        .form{
+            position: absolute;
+            left: 80%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            padding: 40px 40px;
+            width: 350px;
+            border-radius: 25px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(126, 122, 122, 0.3);
+        }
+        /*input column*/
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select {
+            width: 100%; 
+            padding: 5px 2px; 
+            margin-bottom: 15px; 
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            position: absolute;
+            padding: 9px 9px;
+            left: 63%;
+            top: 89%;
+            width: 430px;
+            border: 2px solid white; 
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+            color: white;
+            background-color: transparent;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .section1 {
+            flex: 1.5; 
+            background-color: white;
+        }
+        .section2 {
+            flex: 1; 
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="section1">
+        <div style="max-width: 600px; margin: 2em auto"></div>
+        <p>Welcome to</p>
+        <p2><strong>ILC COMMUNITY</strong></p2>
+        <p3>Let's Join Us Now!</p3>
+        <p4>@ created by Nasywa Zahira</p4>
+        <div class="logo">
+            <img src="img/ILC Logo.png" alt="Logo ILC" width="350" height="350">
+        </div>
+        <div class="title">
+            <img src="img/title.png" alt="title" width="380" height="50">
+        </div>
+        </div>
+
+    <div class="section2">
+        <div class="form">
+            <form>
+                <label for="email">Email:</label>
+                <br>
+                <input type="email" id="email" name="email" placeholder="address@gmail.com">
+                <br>
+                <label for="password">Password:</label>
+                <br>
+                <input type="password" id="password" name="password" placeholder="password">
+                <br>
+                <label for="foto profil">Foto Profil:</label>
+                <br>
+                <input type="file" id="foto profil" name="foto profil">
+                <br><br>
+                <label for="tanggal lahir">Tanggal Lahir:</label>
+                <br>
+                <input type="date" id="tanggal" name="tanggal">
+                <br>
+                <label for="gender">Gender:</label>
+                <br>
+                <select name="gender" id="gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </form>
+        </div>
+        <div style="max-width: 600px; margin: 2em auto"></div>
+        <a class="cta" href="#">
+            <button>Register</button>
+        </a>
+    </div>
+</body>
+</html>
